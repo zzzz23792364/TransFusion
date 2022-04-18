@@ -44,8 +44,10 @@ def create_nuscenes_infos(root_path,
         train_scenes = splits.test
         val_scenes = []
     elif version == 'v1.0-mini':
-        train_scenes = splits.mini_train
-        val_scenes = splits.mini_val
+        # train_scenes = splits.mini_train
+        # val_scenes = splits.mini_val
+        train_scenes = ['scene-0061']
+        val_scenes = ['scene-0061']
     else:
         raise ValueError('unknown')
 
